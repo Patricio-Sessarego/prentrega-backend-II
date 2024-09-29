@@ -1,0 +1,48 @@
+<main class="containerPadre" id="containerPadre">
+    {{!-- NO PRODUCTS --}}
+    <div class="noProducts" id="noProducts">
+        <i class="bi bi-box noProductsIcon"></i>
+        <div class="noProductsText">No hay productos registrados</div> 
+    </div>
+
+    {{!-- FORMULARIO --}}
+    <div class="container" id="container">
+        <form action="" class="form" id="formLogIn">
+            <h2 class="h2Form" id="h2Form">Producto</h2>
+            <div class="inp">
+                <input type="text" class="input" id="inputCategoria" placeholder="Categoria">
+                <i class="bi bi-tags-fill"></i>
+            </div>
+            <div class="inp">
+                <input type="text" class="input" id="inputTitle" placeholder="Nombre">
+                <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="inp">
+                <input type="text" class="input" id="inputCodigo" placeholder="Codigo">
+                <i class="bi bi-upc-scan"></i>
+            </div>
+            <div class="inp">
+                <input type="number" class="input" id="inputPrecio" placeholder="Precio">
+                <i class="bi bi-currency-dollar"></i>
+            </div>
+            <div class="inp">
+                <input type="number" class="input" id="inputStock" placeholder="Stock">
+                <i class="bi bi-box-seam-fill"></i>
+            </div>
+            <button class="submit" id="submit">Registrar Producto</button>
+        </form>
+    </div>
+</main>
+
+{{!-- PRODUCTS --}}
+<div class="productos" id="productos"></div>
+
+{{!-- PAGINACION --}}
+<div class="pagination"></div>
+
+{{!-- SWEET ALERT --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{{!-- SOCKET --}}
+<script src="/socket.io/socket.io.js"></script>
+{{!-- SCRIPT --}}
+<script src="../static/assets/js/realTimeProducts.js"></script>

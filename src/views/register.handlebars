@@ -1,0 +1,34 @@
+<main class="containerPadre">
+    <div class="container">
+        <form class="form animate__animated animate__lightSpeedInRight">
+            <h1 class="h1Form">Bienvenido</h1>
+            <div class="inp">
+                <input type="number" name="age" class="input" id="inputAge" placeholder="Edad" required>
+                <i class="bi bi-cake2-fill"></i>
+            </div>
+            <div class="inp">
+                <input type="email" name="email" class="input" id="inputEmail"  placeholder="Email" required>
+                <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="inp">
+                <input type="text" name="first_name" class="input" id="inputFirstName" placeholder="Nombre" required>
+                <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="inp">
+                <input type="text" name="last_name" class="input" id="inputLastName" placeholder="Apellido" required>
+                <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="inp">
+                <input type="password" name="password" class="input" id="inputPassword" placeholder="Contraseña" required>
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <button type="button" class="submit" id="submit">Registrarse</button>
+            <p class="msjForm"> ¿Ya tienes cuenta? <a href="/login" class="linkForm">Por favor, Inicia Sesion</a></p>
+        </form>
+    </div>
+</main>
+
+{{!-- SCRIPT --}}
+<script src="../static/assets/js/register.js"></script>
+{{!-- SWEET ALERT --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

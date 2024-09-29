@@ -1,0 +1,18 @@
+{{!-- CARRITO --}}
+<div idCarrito="{{ id }}" id="carritoId"></div>
+<main class="containerPadre" id="containerPadre">
+    <div class="noProducts">
+        <i class="bi bi-cart-fill noProductsIcon"></i>
+        <div class="noProductsText" id="noProductsText">{{message}}</div> 
+    </div>
+</main>
+
+{{!-- PRODUCTS --}}
+<div class="productos" id="productos"></div>
+
+{{!-- SWEET ALERT --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{{!-- SOCKET --}}
+<script src="/socket.io/socket.io.js"></script>
+{{!-- SCRIPT --}}
+<script src="../static/assets/js/cart.js"></script>

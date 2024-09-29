@@ -1,0 +1,319 @@
+/* DISPLAY NONE */
+d-none {
+    display: none;
+}
+
+/* BODY */
+body , html {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
+
+/* HEADER */
+.logoImg {
+    grid-area: imgLogo;
+}
+  
+.navBarHeader {
+    grid-area: navBarHeader;
+}
+  
+.searchBarContainer {
+    grid-area: searchBar;
+}
+  
+.searchTool {
+    border-radius: 20px;
+}
+  
+.imgLogo {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: #222222;
+    height: 150px;
+    width: 200px;
+}
+
+.imgLogo:hover {
+    transform: scale(1.1);
+}
+  
+.headerContainer {
+    box-shadow: 3px 3px 5px 0px whitesmoke;
+    background-color: #222222;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 75px 75px;
+    grid-template-areas: "imgLogo navBarHeader" "imgLogo searchBar";
+}
+  
+.barraNav {
+    background-color: #222222;
+    justify-content: flex-end;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+  
+.navegacion {
+    background-color: #222222;
+    color: whitesmoke;
+}
+
+.linkCarrito {
+    text-decoration: none;
+}
+  
+.itemNav {
+    height: 40px;
+    font-size: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.itemNav:visited {
+    color: whitesmoke;
+}
+
+.itemNav:focus {
+    transform: scale(1);
+    color: whitesmoke;
+}
+
+.itemNav:hover {
+    transform: scale(1.1);
+    color: #FAEBD7;
+}
+
+.itemNav:hover .h1Header {
+    color: #FAEBD7;
+}
+  
+.h1Header {
+    height: 40px;
+    font-size: 1rem;
+    margin-top: 2px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+  
+.navegacion {
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navegacion:hover {
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transform: scale(1.1);
+}
+  
+.listaHeader:first-child {
+    border-left: 1px solid whitesmoke;
+}
+
+.listaHeader:last-child {
+    border-right: 1px solid whitesmoke;
+}
+  
+.searchBarContainer {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.searchBar {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-right: 13.5px;
+    width: 360px;
+}
+
+.searchBar:hover {
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5), 3px -3px 10px rgba(255, 255, 255, 0.5), -3px -3px 10px rgba(255, 255, 255, 0.5), -3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.searchTool:focus {
+    border-color: inherit;
+    box-shadow: none;
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+  
+.btnSearchBar {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.btnSearchBar:hover {
+    color: black;
+}
+
+/* FORMULARIO LOGIN */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.containerPadre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+  
+.container {
+    width: 800px;
+    height: 725px;
+    background-color: #1F1F1F;
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px 50px 5px rgba(255, 255, 255, 0.5);
+}
+  
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.h1Form {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+  
+.inp {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.inp:hover {
+    color: whitesmoke;
+}
+  
+.input {
+    width: 260px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    margin-top: 40px;
+    color: whitesmoke;
+}
+
+.msjForm {
+    font-size: 1rem;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .linkForm {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+.submit {
+    border: none;
+    width: 290px;
+    cursor: pointer;
+    color: #1F1F1F;
+    margin-top: 60px;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 1.25rem;
+    border-radius: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.submit:hover {
+    transform: scale(1.1);
+    border: 2px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+}
+
+/* SWEET ALERT */
+.swalTitle {
+    font-size: 1.5em;
+    color: #ff6f61;
+}
+
+.swalContent {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.swalConfirmButton {
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #ff6f61;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.swalConfirmButton:hover {
+    transform: scale(1.05) !important;
+    background-color: #e02a1d !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.swal-icon-error {
+    color: #f27474;
+}
+
+.swalTitleError {
+    color: #f27474;
+}
+
+.swalTitleSuccess {
+    color: #4caf50;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.swalContentSuccess {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.swalConfirmButtonSuccess {
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #3085d6;
+}
+
+.swalConfirmButtonSuccess:hover {
+    background-color: #1d72b8;
+}

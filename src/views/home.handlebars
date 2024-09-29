@@ -1,0 +1,43 @@
+{{!-- PRODUCTOS --}}
+{{#if isProducts}}
+    <main class="containerPadre" id="containerPadre">
+        <div class="noProducts">
+            <i class="bi bi-box noProductsIcon"></i>
+            <div class="noProductsText">No hay productos registrados</div> 
+        </div>
+    </main>
+{{else}}
+    <div class="productos" id="productos">
+        {{#each products}}
+            <div class="producto">
+                <p title="CATEGORY" class="categoriaProducto"> {{ this.category }} <i class="bi bi-tags-fill"></i> </p>
+                <p title="TITLE" class="nombreProducto"> {{ this.title }} <i class="bi bi-person-fill"></i> </p>
+                <p title="CODE" class="codigoProducto"> {{ this.code }} <i class="bi bi-upc-scan"></i> </p>
+                <p title="PRICE" class="precioProducto"> {{ this.price }} <i class="bi bi-currency-dollar"></i> </p>
+                <p title="STOCK" class="stockProducto"> {{ this.stock }} <i class="bi bi-box-seam-fill"></i> </p>
+            </div>
+        {{/each}}
+    </div>
+
+{{!-- PAGINACION --}}
+<div class="pagination">
+    {{#if prevLink}}
+        <a href="{{prevLink}}" class="paginationButton previousPage"><i class="bi bi-arrow-left"></i></a>
+    {{/if}}
+
+    {{#each (range 1 totalPages)}}
+        {{#if (eq this ../currentPage)}}
+            <button class="paginationButton currentPaginationButton" disabled>{{this}}</button>
+        {{else}}
+            <a href="/?page={{this}}" class="paginationButton">{{this}}</a>
+        {{/if}}
+    {{/each}}
+
+    {{#if nextLink}}
+        <a href="{{nextLink}}" class="paginationButton nextPage"><i class="bi bi-arrow-right"></i></a>
+    {{/if}}
+</div>
+{{/if}}
+
+{{!-- SCRIPT --}}
+<script src="../static/assets/js/home.js"></script>

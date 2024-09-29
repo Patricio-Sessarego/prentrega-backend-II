@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- ICONOS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {{!-- CSS --}}
+    <link rel="stylesheet" href="../../static/assets/css/{{ style }}">
+</head>
+<body>
+    {{#if showHeader}}
+    {{!-- HEADER --}}
+    <header class="sticky-top">
+        <div class="navbar navbar-expand container-fluid headerContainer" id="headerContainer">
+            <div class="logoImg">
+                <img class="imgLogo" id="imgLogo" src="../../static/assets/img/logo.png" alt="Logo">
+            </div>
+            <div class="navBarHeader">
+                <nav class="collapse navbar-collapse barraNav" id="barraNav">
+                    <ul class="navbar-nav listaHeader" id="listaHeader">
+                        <li class="nav-item navegacion">
+                            <a class="nav-link itemNav primerItem" href="/">Home</a>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <a class="nav-link itemNav" href="/realTimeProducts">Real Time</a>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <p class="nav-link itemNav">{{user}}</p>
+                        </li>
+                        <li class="nav-item navegacion">
+                            <a class="nav-link itemNav" href="/logout">Logout</a>                                                                                                
+                        </li>
+                        {{!-- NOMBRE USUARIO --}}
+                        {{!-- LOGOUT --}}
+                    </ul>
+                </nav>
+            </div>
+            <div class="searchBarContainer">
+                <form class="d-flex searchBar" id="searchBar" role="search">
+                    <input class="form-control me-2 border-0 searchTool" id="searchTool" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn border-0 btnSearchBar" id="btnSearchBar" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    {{/if}}
+
+    {{{ body }}}
+
+    {{!-- JS BOOTSTRAP --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
